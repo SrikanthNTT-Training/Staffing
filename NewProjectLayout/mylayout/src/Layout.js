@@ -6,12 +6,6 @@ import './Layout.css';
 
 
 class Layout extends Component{
-    state = { clicked: false }
-
-
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
   
     render() {
         return (
@@ -47,10 +41,11 @@ class Layout extends Component{
                 </header>
                 <Switch>
                     <Route path='/' exact  />
-                    <Route path='/home' exact  />
-                    <Route path='/Contact us'  />
-                    <Route path='/sign-in'  />
-                    <Route path='/Shopping' />
+                    <Route path='/staffing' exact  />
+                    <Route path='/contract'  />
+                    <Route path='/employee'  />
+                    <Route path='/about' />
+                    <Route path='/contact-us' />
 
                     {/* <Route path='/Help Support' component={Helpsupport} /> */}
 
